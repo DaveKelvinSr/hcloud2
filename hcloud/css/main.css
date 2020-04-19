@@ -1,0 +1,1780 @@
+@CHARSET "UTF-8";
+
+/**
+ * CSS Reset
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	background: transparent;
+	scroll-behavior: smooth;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* 
+ * Fonts
+ */
+
+@font-face {
+	font-family: "Roboto";
+	src: url(roboto/Roboto-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url(roboto/Roboto-Italic.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url(roboto/Roboto-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url(roboto/Roboto-BoldItalic.ttf);
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Roboto Light";
+	src: url(roboto/Roboto-Light.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto Light";
+	src: url(roboto/Roboto-LightItalic.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Roboto Medium";
+	src: url(roboto/Roboto-Medium.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto Medium";
+	src: url(roboto/Roboto-MediumItalic.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Roboto Thin";
+	src: url(roboto/Roboto-Thin.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto Thin";
+	src: url(roboto/Roboto-ThinItalic.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Roboto Black";
+	src: url(roboto/Roboto-Black.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Roboto Black";
+	src: url(roboto/Roboto-BlackItalic.ttf);
+	font-weight: normal;
+	font-style: italic;
+}
+
+/**
+ * Element/tags
+ */
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	min-height: 100%;
+	max-width: 100%;
+	font-family: "Roboto Light";
+	color: #444444;
+	position: relative;
+	line-height: 1.4;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+ul, ol, dl {
+	
+}
+
+h1, h2, h3, h4, h5, h6, p, table {
+	
+}
+
+h1, h2, h3 {
+	
+}
+
+h1 {
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+a img {
+	border: none;
+}
+
+td {
+	
+}
+
+input, textarea, select {
+	
+}
+
+
+header {
+	
+}
+main {
+	
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 4em;
+	background: transparent; background: green*;
+	text-align: center;
+	color: #EEEEEE;
+}
+
+
+/**
+ * Page margins
+ */
+.contents {
+	margin: 0 1.25em 0 1.25em;
+}
+
+.cleardivs {
+	width: 100%;
+}
+.contents-size {
+	max-width: 70em;
+}
+
+.contents-size-special {
+	max-width: 75em;
+}
+
+#clearfooter {
+	padding: 0 0 0 0;/*0 0 4em 0; to keep footer from homepage*/
+	width: 100%;
+}
+
+/**
+ * Common Elements
+ */
+ 
+ 
+/**
+ * Common Elements
+ */
+ 
+ .button-container {
+ 	float: right;
+ }
+
+ .button-container .button {
+	font-size: 1em;
+	line-height: 1.28em;
+	height: 2.56em;
+	padding: 0 0.5em 0 0.5em;
+	margin: 1.28em 0 1.28em 0;
+	border : 1px solid #AAAAAA;
+	border-radius: 1.28em;
+	text-align: center; 
+	text-decoration: none;
+	color: #666666;
+}
+
+.add-button {
+	display: inline-block;
+	padding: 1em 0 1em 0;
+	width: 100%;
+}
+
+/**
+ * Scroll Arrows
+ */
+
+.arrows-container {
+	width: 100%; background: red*;
+	height: 6.4em;
+	position: absolute;
+	display: block;
+	bottom: 0;
+}
+#home-container .arrows, .section-container .arrows {
+	height: 4.8em;
+	width: 4.8em;
+	border-radius: 2.4em;
+	background: #FFFFFF;
+	opacity: 0.6;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.arrows .arrow {
+	margin: 1em 0 0 0;
+	border: solid #000000;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 12.8px;
+}
+
+.arrows .arrow.down-arrow {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+#home-container i.down-scroll-button,
+
+/**
+ * Maint Forms
+ */
+.maint {
+	text-align: left;
+}
+
+.maint fieldset.maintform {
+	border : none;
+	border-top : 1px solid #AAAAAA;
+}
+
+.maint legend {
+	font-size: 1.6em;
+	color: #666666;
+}
+
+.maint p {
+	line-height: 1.6em;
+}
+
+.maint input, .maint textarea {
+	border : none;
+	border-bottom : 1px solid #AAAAAA; 
+	background: transparent;
+	font-size : 1.2em;
+	font-family: Roboto Light;
+	line-height: 1.6em;
+	height: 2.4em;
+	color: #666666;
+	min-width: 16em;
+	text-align: left;
+	padding: 0 0 0 0;
+	margin: 1em 0 1em 0;
+}
+
+.maint textarea {
+	height: 5em;
+}
+
+.maint input.file {
+	border : none;
+}
+
+.maint select {
+	background: transparent;
+	border: none;
+	font-size : 1.2em;
+	font-family: Roboto Light;
+	line-height: 1.6em;
+	height: 2.4em;
+	color: #666666;
+	min-width: 16em;
+	text-align: left;
+	padding: 0 0 0 0;
+	margin: 1em 0 1em 0;
+}
+
+.maint input.submit {
+	line-height: 1.6em;
+	height: 3.2em;
+	padding: 0 0 0 0;
+	margin: 1.6em 0 1.6em 0;
+	border : 1px solid #AAAAAA;
+	border-radius: 1.6em;
+	text-align: center; 
+}
+
+.maint .cancelcont {
+	margin: 2.4em 0 2.4em 0;
+}
+
+.maint .cancelcont a.cancel {
+	color: #444444;
+	text-decoration: none;
+}
+
+/**
+ * Layout divs
+ */
+
+/**
+ * Home
+ */
+ 
+/**
+ * Background
+ */
+#background {
+	position: absolute; background: blue*;
+	z-index: -1;
+	height: 100vh;
+	width: 100%;
+	filter: brightness(0.75);
+	text-align: right;
+}
+
+.background-theme {
+	display: inline-block; /**for loading effect need def*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	opacity: 1;
+	
+	-moz-transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	/**transition-timing-function: ease-in;*/
+}
+
+.background-theme img {
+	min-width: 100%;
+	min-height: 100vh;
+}
+
+/**
+ * Home Content
+ */
+#home-container {
+	height: 100vh; background: blue*;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.home-contents {
+	display: inline-block; background: blue*;
+	position: relative;
+	width: 100%;
+	text-align: left;
+}
+
+/**
+ * Header
+ */ 
+#header-container {
+	display: inline-block; background: red*;
+	width: 100%;
+	padding: 2em 0 0 0;
+}
+
+#header {
+	width: 40%;
+	float: left;
+	font-family: Roboto Light; background: purple*;
+	font-size: 1.6em;
+	color: #BBBBBB;
+	text-align: left;
+}
+
+#header img {
+	height: 0.72em;
+}
+
+/**
+ * Nav
+ */ 
+#nav, .user-nav {
+	display: inline-block; background: pink*;
+	width: 60%;
+	float: right;
+	padding: 2em 0 0 0;
+	color: #EEEEEE;
+}
+
+#nav ul.mainnav, .user-nav ul.mainnav {
+	background: yellow*;
+	float: right;
+}
+
+#nav ul.mainnav li, .user-nav ul.mainnav li {
+	float: left;
+	list-style: none;
+	margin: 0 0.8em 0 0.8em;
+}
+
+#nav ul.mainnav li a, .user-nav ul.mainnav li a {
+	color: #EEEEEE;
+	text-decoration: none;
+}
+
+.user-nav ul.mainnav li a {
+	color: #333333;
+}
+
+/**
+ * Homepage Text
+ */ 
+#homepage-text-container {background: orange*;
+	margin: 5.6em 0 1em 0; /** 5em + 1em to compensate for fixed header container*/
+	padding: 8em 0 0 0; /**changed footer allowance 60px removed*/
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+#homepage-text {
+	padding: 0em 0 0 0;
+	font-size: 2em;
+	text-align: left;
+	position: relative; background: green*;
+	display: block;
+	width: 40%; 
+	min-height: 4.8em;
+	overflow: hidden;
+}
+
+.homepage-theme-text {
+	display: inline-block;/**inline-block;none; /**for loading effect need def*/
+	position: absolute;
+	display: inline-block; background: blue*; top: 0;
+	left: 100%; 
+	width: 100%;
+	color: #CCCCCC;
+	
+	-moz-transition: left 1s;
+	-webkit-transition: left 1s;
+	transition: left 1s;
+	
+	transition-timing-function: ease-in-out;
+}
+
+.homepage-theme-text .small-text {
+	font-size: 0.5em;  background: yellow*;
+	color: #EEEEEE;
+}
+
+/**
+ * Section
+ */
+ 
+/**
+ * Background
+ */
+.background {
+	position: absolute; background: blue*;
+	z-index: -1;
+	height: 100vh;
+	width: 100%;
+	filter: brightness(0.75);
+	text-align: right;
+}
+
+.background .background-theme {
+	display: inline-block; /**for loading effect need def*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	opacity: 1;
+	
+	-moz-transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	/**transition-timing-function: ease-in;*/
+}
+
+.background .background-theme img {
+	min-width: 100%;
+	min-height: 100vh;
+}
+
+/**
+ * Section Content
+ */
+.section-container {
+	min-height: 100vh; background: #555555*;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.section-contents {
+	display: inline-block; background: green*;
+	position: relative;
+	width: 100%;
+	text-align: left;
+}
+
+/**
+ * Header
+ */ 
+.section-header-container {
+	display: inline-block; background: red*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+	margin: 4em 0 0 0;
+}
+
+.section-header-container .header {
+	display: inline-block;
+	width: 100%;
+	font-family: Roboto Light; background: purple*;
+	font-size: 1.2em;
+	color: #BBBBBB;
+	text-align: right;
+}
+
+.section-header-container .header .title {
+	float: left;
+	font-family: Roboto Light;
+	font-size: 1.2em;
+	color: #EEEEEE;
+	text-align: left;
+}
+
+.section-header-container .header .name {
+	float: right;
+	font-family: Roboto Light;
+	font-size: 1.2em;
+	color: #EEEEEE;
+	text-align: left;
+}
+
+.section-header-container .header img {
+	height: 0.72em;
+}
+
+/**
+ * Section Text
+ */ 
+.section-text-container {background: orange*;
+	margin: 4em 0 1em 0; /** 5em + 1em to compensate for fixed header container*/
+	padding: 1em 0 1em 0; /**changed footer allowance 60px removed*/
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 100%;
+	color: #EEEEEE;
+}
+
+.section-text {
+	position: relative; background: green*;
+	display: block;
+	float: left;
+	padding: 0 0 0 0;
+	font-size: 1em;
+	text-align: left;
+	width: 60%; 
+	min-height: 10em;
+	overflow: hidden; margin: 1em 0 0 0;
+}
+
+.section-image {
+	position: relative; background: blue*;
+	display: block;
+	float: right;
+	width: 40%; 
+	min-height: 10em;
+	overflow: hidden; margin: 1em 0 0 0;
+}
+
+/**
+ * User Container
+ */
+#user-container {
+	position: absolute; /** since last no need for z index*/
+	display: block;
+	top: 0;
+	margin: 7.2em 0 5.6em 0; background: green*;
+	width: 100%;
+	text-align: center;
+	height: 100%*;
+	overflow: hidden;
+}
+
+#user-contents {
+	display: inline-block;  background: #EEEEEE;
+	position: relative;
+	margin: 0 0 0 0;
+	width: 100%;
+	text-align: center;
+	min-height: 450vh;
+}
+
+/**
+ * User Contents
+ */
+
+#user-contents-canvas {
+	position: absolute; background: brown*;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#canvas {
+	background: blue*;
+	height: 100%;
+}
+
+#user-contents-contents {
+	
+}
+
+#user-contents-content {
+	
+}
+
+.user-content {
+	display: inline-block; background: green*;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.user-content-width {
+	display: inline-block;
+	width: 92%;
+	text-align: center;
+}
+
+/**
+ * Header
+ */ 
+.user-header-container {
+	display: inline-block; background: red*;
+	width: 100%*;
+	padding: 2em 0 2em 0;
+}
+
+.user-header-container .user-header {
+	display: inline-block;
+	width: 100%;
+	font-family: Roboto Light; background: purple*;
+	font-size: 1.2em;
+	color: #333333;
+	text-align: right;
+}
+
+.user-header-container .user-header .user-title {
+	float: left;
+	font-family: Roboto Light;
+	font-size: 1.2em;
+	color: #333333;
+	text-align: left;
+}
+
+.user-header-container .user-header .user-name {
+	float: right;
+	font-family: Roboto Light;
+	font-size: 1.2em;
+	color: #333333;
+	text-align: left;
+}
+
+.user-header-container .user-header img {
+	height: 0.72em;
+}
+
+/**
+ * User Nav
+ */ 
+.user-nav {
+	display: inline-block; background: pink*;
+	width: 60%;
+	float: right;
+	padding: 1em 0 1em 0;
+	color: #333333;
+}
+
+.user-nav ul.mainnav {
+	background: yellow*;
+	float: right;
+}
+
+.user-nav ul.mainnav li {
+	float: left;
+	list-style: none;
+	margin: 0 0.8em 0 0.8em;
+}
+
+/**
+ * Message
+ */ 
+.user-message {
+	display: inline-block; background: pink*;
+	width: 100%;
+	padding: 1em 0 1em 0;
+	color: #333333;
+}
+
+/**
+ * User Info
+ */ 
+.user-info-container {
+	display: inline-block; background: pink*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+	color: #333333;
+}
+.user-info {
+	display: inline-block; background: grey*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+}
+
+
+/**
+ * User Content Page
+ */
+.user-content-page-header {
+	font-size: 2em;
+	margin: 1em 0 1em 0;
+	text-align: left; background: yellow*;
+}
+
+.user-content-page-avatar-container {
+	width: 100%;
+	height: 5em;
+	margin: 1em 0 1em 0;
+	overflow: hidden; background: green*;
+}
+
+.user-content-page-avatar {
+	width: 5em;
+	height: 5em;
+	overflow: hidden;
+	float: right;
+	border-radius: 2.5em; background: yellow*;
+}
+
+.user-content-page-avatar img {
+	width: 5em;
+	border-radius: 2.5em;
+}
+
+.user-content-page-name-container {
+	width: 100%;
+	height: 1em;
+}
+
+.user-content-page-name-container .name {
+	font-size: 0.8em;
+	float: right;
+	min-width: 5em;
+}
+
+.user-content-page-text {
+	text-align: left; background: red*;
+	line-height: 2.4em;
+	margin: 2em 0 2em 0;
+	max-height: 360vh;
+}
+
+.user-content-page-text-list {
+	list-style: none;
+	max-height: 360vh;
+	overflow: auto;
+}
+
+.user-content-page-text-item {
+	padding: 1em 0 1em 0;
+	border-top : 1px solid #AAAAAA; 
+	min-height: 4em;
+}
+
+
+
+
+
+/**
+ * Request
+ */ 
+.requests {
+	display: inline-block; background: green*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+}
+
+.requests-section {
+	display: inline-block; background: grey*;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+
+.first-section {
+	
+}
+
+.second-section {
+	background: #123456;
+}
+
+.third-section {
+	background: ;
+}
+
+.fourth-section {
+	height: 80vh;
+	background: #790000;
+}
+
+.requests-buttons {
+	display: inline-block; background: purple*;
+	width: 100%*;
+	text-align: center;
+	max-height: 40em;
+	overflow: auto;
+}
+
+.requests-buttons-header {
+	font-size: 2em;
+	text-align: left; background: yellow*;
+}
+
+.requests-buttons .button {
+	display: inline-block; background: indigo*;
+	width: 12.8em; 
+	height: 16.0em;
+	margin: 1.2em 1.2em 1.2em 1.2em;
+}
+
+.requests-buttons .button .button-image {
+	position: relative;
+	display: inline-block; background: purple*;
+	width: 100%; 
+	height: 12.8em; 
+	float: left;
+}
+
+.requests-buttons .button .button-image img { 
+	width: 100%;  
+}
+
+.requests-buttons .button .button-text {
+	position: relative;
+	display: inline-block; background: yellow*;
+	width: 100%; 
+	height: 3.2em; 
+	float: left;
+	text-align: center;
+	line-height: 3.2em;
+} 
+
+.requests-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.requests-info-content {
+	display: inline-block; background: blue*;
+	margin: 4em 0 4em 0;
+}
+
+.requests-info-content-text {
+	margin: 1.6em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.requests-info-content-image {
+	height: 16em;
+}
+
+.requests-info-content-image img {
+	height: 16em;
+}
+
+.requests-views-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.requests-views-info-content {
+	display: inline-block; background: blue*;
+	margin: 2em 0 2em 0;
+}
+
+.requests-views-info-content-text {
+	margin: 0.8em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.requests-views-info-content-image {
+	height: 16em;
+}
+
+.requests-views-info-content-image img {
+	height: 16em;
+}
+
+
+/**
+ * My Profile
+ */ 
+.myprofile {
+	display: inline-block; background: green*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+}
+
+.myprofile-section {
+	position: relative;
+	display: inline-block; background: grey*;
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.myprofile .first-section {
+	min-height: 100vh;
+}
+
+.myprofile .second-section {
+	min-height: 80vh;
+	background: #123456;
+}
+
+.myprofile .third-section {
+	min-height: 10vh;
+}
+
+.myprofile .fourth-section {
+	min-height: 80vh;
+	background: #790000;
+}
+
+.myprofile-contents {
+	display: inline-block;
+	position: relative;
+	margin: 1em 0 1em 0; background: blue*;
+}
+
+.myprofile-contents-header {
+	font-size: 2em;
+	text-align: left; background: yellow*;
+}
+
+.myprofile-text {
+	text-align: left;
+	line-height: 2.4em; 
+	max-height: 80em; 
+	overflow: auto;
+}
+
+.myprofile-text .name {
+	font-size: 2em;
+}
+
+.myprofile-text .myprofile-list, .myprofile-innerlist {
+	margin: 0 1em 0 1em;
+	list-style: none;
+}
+
+.myprofile-avatar-container {
+	width: 100%;
+	height: 5em;
+	margin: 1em 0 1em 0;
+	overflow: hidden;
+}
+
+.myprofile-avatar {
+	width: 5em;
+	height: 5em;
+	overflow: hidden;
+	float: right;
+	border-radius: 2.5em;
+}
+
+.myprofile-avatar img {
+	width: 5em;
+	border-radius: 2.5em;
+}
+
+.myprofile-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.myprofile-info-content {
+	display: inline-block; background: blue*;
+	margin: 4em 0 4em 0;
+}
+
+.myprofile-info-content-text {
+	margin: 1.6em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.myprofile-info-content-subtext {
+	width: 100%;
+}
+
+.myprofile-info-content-subtext-image {
+	height: 8em;
+}
+
+.myprofile-info-content-subtext-image img {
+	height: 8em;
+}
+
+.myprofile-info-content-subtext-text {
+	font-size: 1.6em;
+	color: #EEEEEE;
+}
+
+.myprofile-info-content-subtext-text .button {
+	display: inline-block;
+	font-size: 1em;
+	color: #EEEEEE;
+	background: #4488FF;
+	line-height: 1.2em;
+	padding: 0 0.6em 0 0.6em;
+	border-radius: 0.6em;
+}
+
+.myprofile-info-content-image {
+	height: 16em;
+}
+
+.myprofile-info-content-image img {
+	height: 16em;
+}
+
+.myprofile-views-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.myprofile-views-info-content {
+	display: inline-block; background: blue*;
+	margin: 2em 0 2em 0;
+}
+
+.myprofile-views-info-content-text {
+	margin: 0.8em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.myprofile-views-info-content-image {
+	height: 16em;
+}
+
+.myprofile-views-info-content-image img {
+	height: 16em;
+}
+
+
+/**
+ * Login
+ */ 
+.login {
+	display: inline-block; background: green*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+}
+
+.login-section {
+	display: inline-block; background: grey*;
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.login .first-section {
+	
+}
+
+.login .second-section {
+	background: #123456;
+}
+
+.login .third-section {
+	background: ;
+}
+
+.login .fourth-section {
+	min-height: 80vh;
+	background: #790000;
+}
+
+.login-contents {
+	display: inline-block;
+	position: relative; background: blue*;
+	text-align: left;
+	max-height: 40em;
+	overflow: auto;
+}
+
+.login-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.login-info-content {
+	display: inline-block; background: blue*;
+	margin: 4em 0 4em 0;
+}
+
+.login-info-content-text {
+	margin: 1.6em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.login-info-content-image {
+	height: 16em;
+}
+
+.login-info-content-image img {
+	height: 16em;
+}
+
+.login-views-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.login-views-info-content {
+	display: inline-block; background: blue*;
+	margin: 2em 0 2em 0;
+}
+
+.login-views-info-content-text {
+	margin: 0.8em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.login-views-info-content-image {
+	height: 16em;
+}
+
+.login-views-info-content-image img {
+	height: 16em;
+}
+
+
+/**
+ * Logout
+ */ 
+.logout {
+	display: inline-block; background: green*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+}
+
+.logout-section {
+	display: inline-block; background: grey*;
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.logout .first-section {
+	
+}
+
+.logout .second-section {
+	background: #123456;
+}
+
+.logout .third-section {
+	background: ;
+}
+
+.logout .fourth-section {
+	min-height: 80vh;
+	background: #790000;
+}
+
+.logout-contents {
+	display: inline-block;
+	position: relative; background: blue*;
+	text-align: left;
+	max-height: 40em;
+	overflow: auto;
+}
+
+.logout-contents .maint .maintform p {
+	margin: 4em 0 2em 0;
+}
+
+.logout-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.logout-info-content {
+	display: inline-block; background: blue*;
+	margin: 4em 0 4em 0;
+}
+
+.logout-info-content-text {
+	margin: 1.6em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.logout-info-content-subtext {
+	width: 100%;
+}
+
+.logout-info-content-subtext-image {
+	height: 8em;
+}
+
+.logout-info-content-subtext-image img {
+	height: 8em;
+}
+
+.logout-info-content-subtext-text {
+	font-size: 1.6em;
+	color: #EEEEEE;
+}
+
+.logout-info-content-subtext-text .button {
+	display: inline-block;
+	font-size: 1em;
+	color: #EEEEEE;
+	background: #4488FF;
+	line-height: 1.2em;
+	padding: 0 0.6em 0 0.6em;
+	border-radius: 0.6em;
+}
+
+.logout-info-content-image {
+	height: 16em;
+}
+
+.logout-info-content-image img {
+	height: 16em;
+}
+
+.logout-views-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.logout-views-info-content {
+	display: inline-block; background: blue*;
+	margin: 2em 0 2em 0;
+}
+
+.logout-views-info-content-text {
+	margin: 0.8em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.logout-views-info-content-image {
+	height: 16em;
+}
+
+.logout-views-info-content-image img {
+	height: 16em;
+}
+
+
+/**
+ * Signin
+ */ 
+.signin {
+	display: inline-block; background: green*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+}
+
+.signin-section {
+	display: inline-block; background: grey*;
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.signin .first-section {
+	
+}
+
+.signin .second-section {
+	background: #123456;
+}
+
+.signin .third-section {
+	background: ;
+	min-height: 80vh;
+}
+
+.signin .fourth-section {
+	min-height: 80vh;
+	background: #790000;
+}
+
+.signin-contents {
+	display: inline-block;
+	position: relative; background: blue*;
+	text-align: left;
+	max-height: 48em;
+	overflow: auto;
+}
+
+.signin-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.signin-info-content {
+	display: inline-block; background: blue*;
+	margin: 4em 0 4em 0;
+}
+
+.signin-info-content-text {
+	margin: 1.6em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.signin-info-content-image {
+	height: 16em;
+}
+
+.signin-info-content-image img {
+	height: 16em;
+}
+
+.signin-views-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.signin-views-info-content {
+	display: inline-block; background: blue*;
+	margin: 2em 0 2em 0;
+}
+
+.signin-views-info-content-text {
+	margin: 0.8em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.signin-views-info-content-image {
+	height: 16em;
+}
+
+.signin-views-info-content-image img {
+	height: 16em;
+}
+
+
+/**
+ * My Medical Records
+ */ 
+.my-medical-records {
+	display: inline-block; background: green*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+}
+
+.my-medical-records-section {
+	position: relative;
+	display: inline-block; background: grey*;
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.my-medical-records .first-section {
+	min-height: 100vh;
+}
+
+.my-medical-records .second-section {
+	min-height: 80vh;
+	background: #123456;
+}
+
+.my-medical-records .third-section {
+	min-height: 40vh;
+}
+
+.my-medical-records .fourth-section {
+	min-height: 80vh;
+	background: #790000;
+}
+
+.my-medical-records-contents {
+	display: inline-block;
+	position: relative;
+	margin: 1em 0 1em 0; background: blue*;
+}
+
+.my-medical-records-contents-header {
+	font-size: 2em;
+	text-align: left; background: yellow*;
+}
+
+.my-medical-records-avatar-container {
+	width: 100%;
+	height: 5em;
+	margin: 1em 0 1em 0;
+	overflow: hidden; background: green*;
+}
+
+.my-medical-records-avatar {
+	width: 5em;
+	height: 5em;
+	overflow: hidden;
+	float: right;
+	border-radius: 2.5em; background: yellow*;
+}
+
+.my-medical-records-avatar img {
+	width: 5em;
+	border-radius: 2.5em;
+}
+
+.my-medical-records-name-container {
+	width: 100%;
+	height: 1em;
+}
+
+.my-medical-records-name-container .name {
+	font-size: 0.8em;
+	float: right;
+	min-width: 5em;
+}
+
+.my-medical-records-text {
+	text-align: left;
+	line-height: 2.4em;
+	margin: 2em 0 2em 0;
+	max-height: 132vh;
+}
+
+.my-medical-records-text-list {
+	list-style: none;
+	max-height: 132vh;
+	overflow: auto;
+}
+
+.my-medical-records-text-item {
+	padding: 1em 0 1em 0;
+	border-top : 1px solid #AAAAAA; 
+}
+
+.my-medical-records-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.my-medical-records-info-content {
+	display: inline-block; background: blue*;
+	margin: 4em 0 4em 0;
+}
+
+.my-medical-records-info-content-text {
+	margin: 1.6em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.my-medical-records-info-content-subtext {
+	width: 100%;
+}
+
+.my-medical-records-info-content-subtext-image {
+	height: 8em;
+}
+
+.my-medical-records-info-content-subtext-image img {
+	height: 8em;
+}
+
+.my-medical-records-info-content-subtext-text {
+	font-size: 1.6em;
+	color: #EEEEEE;
+}
+
+.my-medical-records-info-content-subtext-text .button {
+	display: inline-block;
+	font-size: 1em;
+	color: #EEEEEE;
+	background: #4488FF;
+	line-height: 1.2em;
+	padding: 0 0.6em 0 0.6em;
+	border-radius: 0.6em;
+}
+
+.my-medical-records-info-content-image {
+	height: 16em;
+}
+
+.my-medical-records-info-content-image img {
+	height: 16em;
+}
+
+.my-medical-records-views-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.my-medical-records-views-info-content {
+	display: inline-block; background: blue*;
+	margin: 2em 0 2em 0;
+}
+
+.my-medical-records-views-info-content-text {
+	margin: 0.8em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.my-medical-records-views-info-content-image {
+	height: 16em;
+}
+
+.my-medical-records-views-info-content-image img {
+	height: 16em;
+}
+
+
+/**
+ * My Accounts
+ */ 
+.my-accounts {
+	display: inline-block; background: green*;
+	width: 100%;
+	padding: 2em 0 2em 0;
+}
+
+.my-accounts-section {
+	position: relative;
+	display: inline-block; background: grey*;
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.my-accounts .first-section {
+	min-height: 100vh;
+}
+
+.my-accounts .second-section {
+	min-height: 80vh;
+	background: #123456;
+}
+
+.my-accounts .third-section {
+	min-height: 40vh;
+}
+
+.my-accounts .fourth-section {
+	min-height: 80vh;
+	background: #790000;
+}
+
+.my-accounts-contents {
+	display: inline-block;
+	position: relative;
+	margin: 1em 0 1em 0; background: blue*;
+}
+
+.my-accounts-contents-header {
+	font-size: 2em;
+	text-align: left; background: yellow*;
+}
+
+.my-accounts-avatar-container {
+	width: 100%;
+	height: 5em;
+	margin: 1em 0 1em 0;
+	overflow: hidden; background: green*;
+}
+
+.my-accounts-avatar {
+	width: 5em;
+	height: 5em;
+	overflow: hidden;
+	float: right;
+	border-radius: 2.5em; background: yellow*;
+}
+
+.my-accounts-avatar img {
+	width: 5em;
+	border-radius: 2.5em;
+}
+
+.my-accounts-name-container {
+	width: 100%;
+	height: 1em;
+}
+
+.my-accounts-name-container .name {
+	font-size: 0.8em;
+	float: right;
+	min-width: 5em;
+}
+
+.my-accounts-text {
+	text-align: left;background: red*;
+	line-height: 2.4em;
+	margin: 2em 0 2em 0;
+	max-height: 140vh;
+}
+
+.my-account-figure {
+	font-size: 1.32em;
+}
+
+.my-accounts-text-list {
+	list-style: none;
+	max-height: 132vh;
+	overflow: auto;
+}
+
+.my-accounts-text-item {
+	padding: 1em 0 1em 0;
+	border-top : 1px solid #AAAAAA; 
+}
+
+.my-accounts-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.my-accounts-info-content {
+	display: inline-block; background: blue*;
+	margin: 4em 0 4em 0;
+}
+
+.my-accounts-info-content-text {
+	margin: 1.6em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.my-accounts-info-content-subtext {
+	width: 100%;
+}
+
+.my-accounts-info-content-subtext-image {
+	height: 8em;
+}
+
+.my-accounts-info-content-subtext-image img {
+	height: 8em;
+}
+
+.my-accounts-info-content-subtext-text {
+	font-size: 1.6em;
+	color: #EEEEEE;
+}
+
+.my-accounts-info-content-subtext-text .button {
+	display: inline-block;
+	font-size: 1em;
+	color: #EEEEEE;
+	background: #4488FF;
+	line-height: 1.2em;
+	padding: 0 0.6em 0 0.6em;
+	border-radius: 0.6em;
+}
+
+.my-accounts-info-content-image {
+	height: 16em;
+}
+
+.my-accounts-info-content-image img {
+	height: 16em;
+}
+
+.my-accounts-views-info {
+	display: inline-block;	background: blue*;
+	height: 100%;
+}
+
+.my-accounts-views-info-content {
+	display: inline-block; background: blue*;
+	margin: 2em 0 2em 0;
+}
+
+.my-accounts-views-info-content-text {
+	margin: 0.8em 0 0 0;
+	font-size: 4em;
+	color: #EEEEEE;
+}
+
+.my-accounts-views-info-content-image {
+	height: 16em;
+}
+
+.my-accounts-views-info-content-image img {
+	height: 16em;
+}
